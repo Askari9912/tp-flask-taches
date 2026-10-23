@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block titre %}{{ tache.titre }} — {{ super() }}{% endblock %}
+{% block contenu %}
+  <h1>{{ tache.titre }}</h1>
+  <p>Priorité : {{ tache.priorite }}</p>
+  <p>État : {{ "terminée" if tache.terminee else "à faire" }}</p>
+  <p><a href="{{ url_for('index') }}">← Retour à la liste</a></p>
+{% endblock %}

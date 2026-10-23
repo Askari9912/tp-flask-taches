@@ -1,0 +1,13 @@
+body { font-family: sans-serif; max-width: 640px; margin: 0 auto; padding: 1rem; }
+nav a { margin-right: 1rem; }
+ul { list-style: none; padding: 0; }
+li { padding: .5rem 0; border-bottom: 1px solid #ddd; }
+li form { display: inline; }
+.finie { color: #888; }
+.prio { font-size: .8rem; padding: 2px 8px; border-radius: 10px; background: #eee; }
+.prio.haute { background: #f8c9c9; }
+.prio.basse { background: #d5ecd5; }
+.flash { background: #dff0d8; padding: .5rem; border-radius: 4px; }
+.erreur { background: #f8d7da; padding: .5rem; border-radius: 4px; }
+.filtres a.actif { font-weight: bold; }
+.filtres a { margin-right: .75rem; }

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block titre %}Ajouter — {{ super() }}{% endblock %}
+{% block contenu %}
+  <h1>Nouvelle tâche</h1>
+  {% for e in erreurs %}<p class="erreur">{{ e }}</p>{% endfor %}
+  <form method="post">
+    <input name="titre" placeholder="Titre" value="{{ titre }}">
+    <select name="priorite">
+      {% for p in ["basse", "normale", "haute"] %}
+        <option {% if p == priorite %}selected{% endif %}>{{ p }}</option>
+      {% endfor %}
+    </select>
+    <button>Ajouter</button>
+  </form>
+{% endblock %}

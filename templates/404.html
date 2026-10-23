@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block titre %}Page introuvable{% endblock %}
+{% block contenu %}
+  <h1>404 — Page introuvable</h1>
+  <p>Cette adresse ne correspond à rien. <a href="{{ url_for('index') }}">Retour à l'accueil</a></p>
+{% endblock %}
